@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+</head>
+<body>
+    <div id="app" class="mdui-theme-light">
+    <h1>Cloud Chat</h1>
+    <link rel="stylesheet" href="/index.4d663569.css">
+    <div class="mdui-theme-light">
+      <mdui-card>
+    <ul id="messages"></ul>
+    </mdui-card></div>
+
+    <div id="formb3">
+        <mdui-text-field type="text" name="name" placeholder="Enter your Username" id="input_btrusername" variant="outlined" onkeypress="handle(event)">
+        <mdui-button onclick="setUsername();">Start</mdui-button>
+    </mdui-text-field></div>
+
+<script>function handle(e) {
+    if (e.keyCode === 13) setUsername();
+}
+function CHAThandle(e) {
+    if (e.keyCode === 13) addMessage();
+}
+
+</script>
+    <div id="formb2">
+      <mdui-card> <mdui-text-field type="text" name="messabge" placeholder="Enter message here" id="input_btrmeassage" onkeypress="CHAThandle(event)">
+      <br>
+      <input type="file" id="sdasd" style="display: none">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"></mdui-text-field></mdui-card>
+      <mdui-button-icon variant="tonal" onclick="document.getElementById('sdasd').click();" icon="upload_file"><span class="material-symbols-outlined">
+        upload_file
+        </span></mdui-button-icon>
+      <mdui-button type="submit" onclick="addMessage()">Send
+      <br>
+
+    </mdui-button></div>
+  
+
+    </div>
+
+    <!-- Include your other scripts -->
+    <script src="/index.579125c3.js"></script>
+    <script src="/index.ac9dc4ba.js" defer=""></script>
+
+</body>
+</html>
